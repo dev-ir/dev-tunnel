@@ -15,7 +15,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/dev-ir/dev-tunnel/master/multi
 - English
 
 ## 🪚 Preview
-##![image](https://github.com/dev-ir/icmp-monitor/assets/114811214/43c08c75-15ad-4184-977a-32998e2d6c94)
 
 **If this project is helpful to you, you may wish to give it a**:star2:
 
