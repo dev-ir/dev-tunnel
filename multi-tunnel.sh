@@ -12,6 +12,10 @@ cur_dir=$(pwd)
 [[ $EUID -ne 0 ]] && echo -e "${RED}Fatal error: ${plain} Please run this script with root privilege \n " && exit 1
 
 init(){
+
+    #clear page .
+    clear
+
     echo "+--------------------------------------------------------------------------------------+"
     echo "|                                                                                      |"
     echo "|     _____   ______ __      __      _______  _    _  _   _  _   _  ______  _          |"
@@ -30,8 +34,7 @@ init(){
     echo -e "${BLUE}| 0  - Exit"
     echo -e "${BLUE}|"
     echo "+--------------------------------------------------------------------------------------+"
-    echo -e "${NC}|"
-
+    echo -e "\033[0m"
 
 
 }
