@@ -26,17 +26,36 @@ init(){
     echo "|    |_____/ |______|    \/            |_|    \____/ |_| \_||_| \_||______||______|    |"
     echo "|                                                                                      |"
     echo "+--------------------------------------------------------------------------------------+"
-    echo -e "${GREEN}Please choose an option:${YELLOW}"
+    echo -e "${GREEN}Please choose an option:${NC}"
     echo "+--------------------------------------------------------------------------------------+"
-    echo -e "$YELLOW${BLUE}|"
-    echo -e "${BLUE}| 1  - Install Speedtest.net                    ( IRAN )"
-    echo -e "${BLUE}| 2  - Install Monitoring                       ( IRAN )"
+    echo -e "${BLUE}| 1  - Tunnel IP6 GRE + iptable"
+    echo -e "${BLUE}| 2  - Tunnel IP6 GRE + gost"
+    echo -e "${BLUE}| 3  - Tunnel IP6 GRE + ipv4 + iptable"
     echo -e "${BLUE}| 0  - Exit"
-    echo -e "${BLUE}|"
     echo "+--------------------------------------------------------------------------------------+"
     echo -e "\033[0m"
 
+    read -p "Enter option number: " choice
+    case $choice in
+    1)
+        echo "simple 1"
+        ;;
+    2)
+        echo "simple 2"
+        ;;
+    0)
+        echo -e "${GREEN}Exiting program...${NC}"
+        exit 0
+        ;;
+    *)
+        echo "Not valid"
+        ;;
+    esac
+        
 
 }
+
+
+
 
 init
